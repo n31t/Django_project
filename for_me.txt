@@ -1,0 +1,47 @@
+python -m venv myworld
+source myworld/bin/activate
+
+
+'''
+mkdir project_test
+cd project_test
+virtualenv МОЕИМЯ -p python3
+source МОЕИМЯ/bin/activate                deactivate
+'''
+pip install Django
+django-admin --version
+django-admin startproject project_c
+
+project_test/ ----- (level1)
+|-- project1/ ---- (level2)
+    |    |-- project1/ ---- (level3)  
+    |    |    |-- __init__.py  
+    |    |    |-- settings.py  
+    |    |    |-- urls.py  
+    |    |    |-- wsgi.py  
+    |    +-- manage.py  
++-- ptest/
+
+(GO TO LEVEL2)
+python project_c/manage.py runserver  OR python manage.py runserver
+
+py manage.py startapp 'APP_NAME'
+
+python manage.py migrate
+python manage.py makemigrations 'APP_NAME'
+python manage.py sqlmigrate 'APP_NAME' 0001
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+python manage.py makemessages -l ru
+python manage.py compilemessages
+pip install python-gettext В ВИРТУАЛ ЭНВ СКАЧИВАЕТ ГЕТТЕКСТ ДЛЯ ПЕРЕВОДА
+
+
+
+
+For Bash:
+export PATH="/opt/homebrew/bin:$PATH"
+For Zsh:
+export PATH="/opt/homebrew/bin:$PATH"
